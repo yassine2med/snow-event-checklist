@@ -1,0 +1,16 @@
+{
+  "event": "Winter storm response",
+  "tasks": [
+    {"id": "forecast", "title": "Confirm forecast and notify the response team", "owner": "Facility manager", "due_hours": -48},
+    {"id": "salt-stock", "title": "Count deicer and fill spreaders", "owner": "Grounds lead", "due_hours": -36, "depends_on": ["forecast"]},
+    {"id": "equipment", "title": "Test plows, blowers and shovels", "owner": "Grounds lead", "due_hours": -30, "depends_on": ["forecast"]},
+    {"id": "vendor", "title": "Confirm contractor on call and arrival times", "owner": "Facility coordinator", "due_hours": -24, "depends_on": ["forecast"]},
+    {"id": "pretreat", "title": "Pretreat walkways, ramps and entrances", "owner": "Grounds lead", "due_hours": -8, "depends_on": ["salt-stock", "equipment"]},
+    {"id": "notice", "title": "Send closure or delay notice to tenants", "owner": "Facility coordinator", "due_hours": -6, "depends_on": ["forecast"]},
+    {"id": "roof-drains", "title": "Check roof drains and building entrances for ice dams", "owner": "Maintenance tech", "due_hours": -4},
+    {"id": "first-pass", "title": "First plow and salt pass at event start", "owner": "Contractor", "due_hours": 0, "depends_on": ["pretreat", "vendor"]},
+    {"id": "check-in", "title": "Hourly condition check of exits and ramps", "owner": "Maintenance tech", "due_hours": 3, "depends_on": ["first-pass"]},
+    {"id": "clear-all", "title": "Clear all accessible routes and parking", "owner": "Contractor", "due_hours": 12, "depends_on": ["first-pass"]},
+    {"id": "debrief", "title": "Log damage, hours and salt used; debrief the team", "owner": "Facility manager", "due_hours": 36, "depends_on": ["clear-all"]}
+  ]
+}

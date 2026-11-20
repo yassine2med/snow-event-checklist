@@ -1,0 +1,9 @@
+{
+  "event": "Broken example",
+  "tasks": [
+    {"id": "a", "title": "Task A", "owner": "Lead", "due_hours": -2, "depends_on": ["b"]},
+    {"id": "b", "title": "Task B", "owner": "Lead", "due_hours": -4, "depends_on": ["a"]},
+    {"id": "c", "title": "Task C", "owner": "", "due_hours": -1, "depends_on": ["ghost"]},
+    {"id": "c", "title": "Duplicate id", "owner": "Lead", "due_hours": 1}
+  ]
+}
