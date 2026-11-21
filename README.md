@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.svg" alt="snow-event-checklist" width="100%"></p>
+
 # snow-event-checklist
 
 A snow or ice event is mostly preparation done on time: deicer counted, contractor confirmed, walkways pretreated, tenants told. This repo keeps that checklist as a JSON file with owners, due times counted from the event start and dependencies, then prints the timeline and tells you at any moment what is done, overdue or due soon.
