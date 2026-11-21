@@ -2,6 +2,8 @@
 
 # snow-event-checklist
 
+[![CI](https://github.com/yassine2med/snow-event-checklist/actions/workflows/ci.yml/badge.svg)](https://github.com/yassine2med/snow-event-checklist/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.10%2B-3776ab) ![License](https://img.shields.io/badge/license-MIT-8fb08a)
+
 A snow or ice event is mostly preparation done on time: deicer counted, contractor confirmed, walkways pretreated, tenants told. This repo keeps that checklist as a JSON file with owners, due times counted from the event start and dependencies, then prints the timeline and tells you at any moment what is done, overdue or due soon.
 
 ![Screenshot](docs/screenshot.png)
